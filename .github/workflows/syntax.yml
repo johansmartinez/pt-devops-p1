@@ -13,5 +13,5 @@ jobs:
     - name: Revisión del código
       uses: actions/checkout@v3
 
-    - name: Revisión sistaxis archivo README.md
+    - name: Revisión sintaxis archivo README.md
       run: markdownlint README.md
