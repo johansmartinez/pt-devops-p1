@@ -12,6 +12,9 @@ jobs:
     steps:
     - name: Revisión del código
       uses: actions/checkout@v3
+    
+    - name: Instalando markdownlint-cli
+      run: npm install -g markdownlint-cli
 
     - name: Revisión sintaxis archivo README.md
       run: markdownlint README.md
