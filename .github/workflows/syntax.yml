@@ -1,0 +1,17 @@
+name: Revisión Sintaxis README
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Revisión del código
+      uses: actions/checkout@v3
+
+    - name: Revisión sistaxis archivo README.md
+      run: markdownlint README.md
